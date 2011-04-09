@@ -6,10 +6,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NLAction.h"
+#import "SKAction.h"
 #import "ScriptBridge.h"
 
-@interface ExpanDriveAction : NLAction {
+@interface ExpanDriveAction : SKAction {
 	ScriptBridgeExpanDrive *expanDrive;
 }
 

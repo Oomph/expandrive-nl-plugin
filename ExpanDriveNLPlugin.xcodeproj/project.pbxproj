@@ -21,9 +21,9 @@
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF630370AF2F00C91783 /* ExpanDriveNLPlugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanDriveNLPlugin_Prefix.pch; sourceTree = "<group>"; };
-		66A640D81277630600FF9DF9 /* NLAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLAction.h; sourceTree = "<group>"; };
-		66A640D91277630600FF9DF9 /* NLPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPlugin.h; sourceTree = "<group>"; };
-		66A640DA1277630600FF9DF9 /* OptionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionSheetController.h; sourceTree = "<group>"; };
+		5FD2D4BC134FEAA30030D6A2 /* SKPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPlugin.h; sourceTree = "<group>"; };
+		5FD2D4BD134FEAA30030D6A2 /* SKAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAction.h; sourceTree = "<group>"; };
+		5FD2D4BE134FEAA30030D6A2 /* SKOptionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKOptionSheetController.h; sourceTree = "<group>"; };
 		66A640DF1277636400FF9DF9 /* ExpanDrivePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanDrivePlugin.h; sourceTree = "<group>"; };
 		66A640E01277636400FF9DF9 /* ExpanDrivePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanDrivePlugin.m; sourceTree = "<group>"; };
 		66A640E21277639E00FF9DF9 /* ExpanDriveAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanDriveAction.h; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		66A6415D1277720700FF9DF9 /* ExpanDriveOptionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanDriveOptionSheetController.m; sourceTree = "<group>"; };
 		66A641A31277781E00FF9DF9 /* ScriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptBridge.h; sourceTree = "<group>"; };
 		66FD728912889C2C00D41506 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		8D5B49B6048680CD000E48DA /* ExpanDrive.nlplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpanDrive.nlplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B6048680CD000E48DA /* ExpanDrive.skplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpanDrive.skplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -53,8 +53,8 @@
 		089C166AFE841209C02AAC07 /* ExpanDriveNLPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				5FD2D4BA134FEA920030D6A2 /* SKPlugin */,
 				66A6419F1277781300FF9DF9 /* ScriptBridge */,
-				66A640D7127762F800FF9DF9 /* NLPlugin */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -118,7 +118,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* ExpanDrive.nlplugin */,
+				8D5B49B6048680CD000E48DA /* ExpanDrive.skplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,14 +131,14 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		66A640D7127762F800FF9DF9 /* NLPlugin */ = {
+		5FD2D4BA134FEA920030D6A2 /* SKPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				66A640D81277630600FF9DF9 /* NLAction.h */,
-				66A640D91277630600FF9DF9 /* NLPlugin.h */,
-				66A640DA1277630600FF9DF9 /* OptionSheetController.h */,
+				5FD2D4BC134FEAA30030D6A2 /* SKPlugin.h */,
+				5FD2D4BD134FEAA30030D6A2 /* SKAction.h */,
+				5FD2D4BE134FEAA30030D6A2 /* SKOptionSheetController.h */,
 			);
-			name = NLPlugin;
+			name = SKPlugin;
 			sourceTree = "<group>";
 		};
 		66A6419F1277781300FF9DF9 /* ScriptBridge */ = {
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D5B49AC048680CD000E48DA /* ExpanDriveNLPlugin */ = {
+		8D5B49AC048680CD000E48DA /* ExpanDriveSKPlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExpanDriveNLPlugin" */;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExpanDriveSKPlugin" */;
 			buildPhases = (
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
@@ -164,10 +164,10 @@
 			);
 			dependencies = (
 			);
-			name = ExpanDriveNLPlugin;
+			name = ExpanDriveSKPlugin;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = ExpanDriveNLPlugin;
-			productReference = 8D5B49B6048680CD000E48DA /* ExpanDrive.nlplugin */;
+			productReference = 8D5B49B6048680CD000E48DA /* ExpanDrive.skplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D5B49AC048680CD000E48DA /* ExpanDriveNLPlugin */,
+				8D5B49AC048680CD000E48DA /* ExpanDriveSKPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -236,13 +236,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ExpanDriveNLPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = ExpanDrive;
-				WRAPPER_EXTENSION = nlplugin;
+				WRAPPER_EXTENSION = skplugin;
 			};
 			name = Release;
 		};
@@ -265,7 +266,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExpanDriveNLPlugin" */ = {
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "ExpanDriveSKPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913C08733D840010E9CD /* Release */,

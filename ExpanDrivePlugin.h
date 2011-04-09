@@ -6,10 +6,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NLPlugin.h"
+#import "SKPlugin.h"
 
 
-@interface ExpanDrivePlugin : NLPlugin {
+@interface ExpanDrivePlugin : SKPlugin {
 
 }
 

@@ -6,10 +6,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "OptionSheetController.h"
+#import "SKOptionSheetController.h"
 #import "ScriptBridge.h"
 
-@interface ExpanDriveOptionSheetController : OptionSheetController <NSTabViewDelegate> {
+@interface ExpanDriveOptionSheetController : SKOptionSheetController <NSTabViewDelegate> {
 	ScriptBridgeExpanDrive *expanDrive;
 	NSArray *drives;
 	NSArray *properties;
